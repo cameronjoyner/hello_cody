@@ -1,0 +1,17 @@
+General Intention:
+- no more than 10 slides
+- clearly artiuclate the tradeoffs of Cody vs Co-Pilot vs Cursor
+- review my usage of the tools
+
+Slide Organization:
+1. High Level - what was the goal
+2. Tools I use most often
+3. Projects I worked on with Cody
+4. High level takeaway of Cody
+- highest cognitive load, most adjustment needed, highest payoff
+5. My own journey map
+6. User Personas
+7. 
+8.
+9. 
+10. 

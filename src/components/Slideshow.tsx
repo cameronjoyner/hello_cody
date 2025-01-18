@@ -17,6 +17,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+import Assistants from './Assistants'
 
 interface Slide {
   title: string
@@ -117,6 +118,12 @@ const slides: Slide[] = [
     category: "Flexibility",
     icon: Palette,
     img: "/placeholder.svg?height=200&width=400"
+  },
+  {
+    title: "Current Assistants Usage",
+    category: "Analytics",
+    icon: BarChart,
+    chart: <Assistants />
   },
   {
     title: "Data Visualization",
