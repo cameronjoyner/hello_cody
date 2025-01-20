@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { ChevronUp, ChevronDown, type LucideIcon, Presentation, Compass, Layout, Palette, BarChart } from 'lucide-react'
+import { PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Palette, BarChart, FlaskConical } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
@@ -17,7 +17,9 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import Assistants from './Assistants'
+import AssistantsSlide4 from './AssistantsSlide4'
+import ToolsSlide2 from './ToolsSlide2'
+import ExperimentsSlide3 from './ExperimentsSlide3'
 
 interface Slide {
   title: string
@@ -95,22 +97,22 @@ const ChartComponent = () => (
 
 const slides: Slide[] = [
   { 
-    title: "Welcome", 
-    description: "This is a modern web-based slideshow.",
+    title: "A meta analysis of Cody", 
+    description: "My approach to understanding Cody's capabilities",
     category: "Introduction",
-    icon: Presentation
+    icon: Bot
   },
   { 
-    title: "Features", 
-    description: "Navigate through slides with up and down arrows.",
+    title: "Tools I use most often", 
     category: "Functionality",
-    icon: Compass
+    icon: PencilRulerIcon,
+    chart: <ToolsSlide2 />
   },
   { 
-    title: "Responsive", 
-    description: "Works well on various screen sizes.",
+    title: "Projects I worked on with Cody",
     category: "Design",
-    icon: Layout
+    chart: <ExperimentsSlide3 />,
+    icon: FlaskConical
   },
   { 
     title: "Customizable", 
@@ -123,7 +125,7 @@ const slides: Slide[] = [
     title: "Current Assistants Usage",
     category: "Analytics",
     icon: BarChart,
-    chart: <Assistants />
+    chart: <AssistantsSlide4 />
   },
   {
     title: "Data Visualization",
