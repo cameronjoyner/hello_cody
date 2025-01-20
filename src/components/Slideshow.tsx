@@ -5,7 +5,6 @@ import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Pal
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
-// import AssistantsSlide5 from './AssistantsSlide5'
 import ToolsSlide2 from './ToolsSlide2'
 import ExperimentsSlide3 from './ExperimentsSlide3'
 import PersonasSlides7 from './PersonasSlides7'
