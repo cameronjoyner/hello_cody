@@ -1,15 +1,14 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { Pickaxe, PaintRoller, PanelsTopLeft } from 'lucide-react';
+import { Pickaxe, PanelsTopLeft, KeyboardIcon } from 'lucide-react';
 import SlideContainer from './SlideContainer';
-import { Keyboard } from './Keyboard';
 
 const TypingGameCard = () => (
   <Card className="p-6">
     <div className="flex flex-col items-center space-y-2">
-      <h3 className="font-semibold">Github Co-Pilot</h3>
-      <p className="text-sm text-gray-500">Our preferred tool at Palantir</p>
-      <Keyboard />
+      <KeyboardIcon className="h-8 w-8" />
+      <h3 className="font-semibold">Typing Game</h3>
+      <p className="text-sm text-gray-500">An ongoing project for my younger cousins in Kindergarten</p>
     </div>
   </Card>
 );
@@ -29,7 +28,7 @@ const CodyContributionCard = () => (
     <div className="flex flex-col items-center space-y-2">
       <Pickaxe className="h-8 w-8" />
       <h3 className="font-semibold">Cody Contribution</h3>
-      <p className="text-sm text-gray-500">Fixing a UI bug that was bothering me</p>
+      <p className="text-sm text-gray-500">Fixing a UI bug that was bothering me in the side panel chat</p>
     </div>
   </Card>
 );
