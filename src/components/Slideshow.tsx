@@ -1,25 +1,15 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Palette, BarChart, FlaskConical, Trophy } from 'lucide-react'
+import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Palette, BarChart, FlaskConical, Trophy, CircleUserRound, UserSearch, Shapes, FileJson } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
-import { CartesianGrid, Line, LineChart, XAxis } from "recharts"
-import {
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components/ui/card"
-import {
-  ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from "@/components/ui/chart"
-// import AssistantsSlide5 from './AssistantsSlide5'
 import ToolsSlide2 from './ToolsSlide2'
 import ExperimentsSlide3 from './ExperimentsSlide3'
+import PersonasSlides7 from './PersonasSlides7'
+import QuestionsForUsersSlide8 from './QuestionsForUsersSlide8'
+import QuesitonsForBuildersSlide9 from './QuesitonsForBuildersSlide9'
 import { UserJourney } from './UserJourney'
 
 interface Slide {
@@ -40,61 +30,6 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ]
 
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
-  },
-  mobile: {
-    label: "Mobile",
-    color: "hsl(var(--chart-2))",
-  },
-} satisfies ChartConfig
-
-const ChartComponent = () => (
-  <Card>
-    <CardHeader>
-    </CardHeader>
-    <CardContent>
-      <ChartContainer config={chartConfig}>
-        <LineChart
-          accessibilityLayer
-          data={chartData}
-          margin={{
-            left: 12,
-            right: 12,
-          }}
-        >
-          <CartesianGrid vertical={false} />
-          <XAxis
-            dataKey="month"
-            tickLine={false}
-            axisLine={false}
-            tickMargin={8}
-            tickFormatter={(value) => value.slice(0, 3)}
-          />
-          <ChartTooltip
-            cursor={false}
-            content={<ChartTooltipContent hideLabel />}
-          />
-          <Line
-            dataKey="desktop"
-            type="natural"
-            stroke="var(--color-desktop)"
-            strokeWidth={2}
-            dot={{
-              fill: "var(--color-desktop)",
-            }}
-            activeDot={{
-              r: 6,
-            }}
-          />
-        </LineChart>
-      </ChartContainer>
-    </CardContent>
-    
-  </Card>
-)
 
 const slides: Slide[] = [
   { 
@@ -134,11 +69,23 @@ const slides: Slide[] = [
     chart: <UserJourney />
   },
   {
-    title: "Data Visualization",
-    category: "Analytics",
-    icon: BarChart,
-    chart: <ChartComponent />
-  }
+    title: "Personas of interest",
+    category: "Personas",
+    icon: CircleUserRound,
+    chart: <PersonasSlides7 />
+  },
+  {
+    title: "My questions for users",
+    category: "Understanding Users",
+    icon: UserSearch,
+    chart: <QuestionsForUsersSlide8 />
+  },
+  {
+    title: "My questions for Sourcegraph",
+    category: "Cody's Future",
+    icon: FileJson,
+    chart: <QuesitonsForBuildersSlide9 />
+  },
 ]
 
 export default function Slideshow() {

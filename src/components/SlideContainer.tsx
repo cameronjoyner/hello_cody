@@ -6,7 +6,7 @@ interface SlideContainerProps {
 
 const SlideContainer: React.FC<SlideContainerProps> = ({ children }) => {
     return (
-      <div className="grid grid-cols-3 gap-6 text-center">
+      <div className={`grid ${children.length === 2 ? 'grid-cols-2' : 'grid-cols-3'} gap-6 text-center`}>
         {children}
       </div>
     );
