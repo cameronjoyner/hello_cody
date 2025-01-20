@@ -1,10 +1,11 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Palette, BarChart, FlaskConical, Trophy, CircleUserRound, UserSearch, Shapes, FileJson } from 'lucide-react'
+import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, FlaskConical, Trophy, CircleUserRound, UserSearch, Shapes, FileJson } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
+import HighLevelSlide1 from './HighLevelSlide1'
 import ToolsSlide2 from './ToolsSlide2'
 import ExperimentsSlide3 from './ExperimentsSlide3'
 import PersonasSlides7 from './PersonasSlides7'
@@ -21,22 +22,18 @@ interface Slide {
   chart?: React.ReactNode
 }
 
-const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
-]
-
-
 const slides: Slide[] = [
   { 
     title: "A meta analysis of Cody", 
     description: "My approach to understanding Cody's capabilities",
     category: "Introduction",
     icon: Bot
+  },
+  { 
+    title: "High level takeaway of Cody", 
+    category: "Review",
+    icon: Trophy,
+    chart: <HighLevelSlide1 />
   },
   { 
     title: "Tools I use most often", 
@@ -49,18 +46,6 @@ const slides: Slide[] = [
     category: "Familiarization",
     chart: <ExperimentsSlide3 />,
     icon: FlaskConical
-  },
-  { 
-    title: "High level takeaway of Cody", 
-    description: "Highest cognitive load, most adjustment, and largest pay off",
-    category: "Review",
-    icon: Trophy
-  },
-  {
-    title: "Compared to other AI assistants",
-    category: "Contrasts",
-    description: "Limitations up front, value came with patience",
-    icon: BarChart,
   },
   {
     title: "My own user journey",
