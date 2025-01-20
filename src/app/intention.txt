@@ -1,17 +1,56 @@
 General Intention:
 - no more than 10 slides
-- clearly artiuclate the tradeoffs of Cody vs Co-Pilot vs Cursor
+- clearly articulate the tradeoffs of Cody vs Co-Pilot vs Cursor
 - review my usage of the tools
 
 Slide Organization:
 1. High Level - what was the goal
+    - Initial objectives for AI coding assistant evaluation
+    - Key metrics for success
+    
 2. Tools I use most often
+    - Feature comparison matrix
+    - Usage frequency breakdown
+    - Integration points
+
 3. Projects I worked on with Cody
+    - This slideshow
+    - Typing game for cousins
+    - Experimental LLM project
+    - Key learnings from each
+
 4. High level takeaway of Cody
-- highest cognitive load, most adjustment needed, highest payoff
+    - Highest cognitive load
+    - Most adjustment needed
+    - Highest payoff
+    - Specific examples
+
 5. My own journey map
+    - Timeline of adoption
+    - Key milestones
+    - Breakthrough moments
+
 6. User Personas
-7. 
-8.
-9. 
-10. 
+    - Who benefits most
+    - Learning curve by user type
+    - Recommended starting points
+
+7. Comparative Analysis
+    - Strengths/weaknesses matrix
+    - Cost-benefit analysis
+    - Team adoption considerations
+
+8. Future Potential
+    - Growth areas
+    - Integration opportunities
+    - Feature wishlist
+
+9. Best Practices
+    - Tips for maximum effectiveness
+    - Common pitfalls to avoid
+    - Team workflow integration
+
+10. Recommendations
+    - When to use each tool
+    - Implementation strategy
+    - Next steps10. 
