@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, FlaskConical, Trophy, CircleUserRound, UserSearch, Shapes, FileJson } from 'lucide-react'
+import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, FlaskConical, Trophy, CircleUserRound, UserSearch, FileJson } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
