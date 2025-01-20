@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Palette, BarChart, FlaskConical } from 'lucide-react'
+import { Map, PencilRulerIcon, ChevronUp, ChevronDown, type LucideIcon, Bot, Palette, BarChart, FlaskConical, Trophy } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
@@ -17,9 +17,10 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import AssistantsSlide4 from './AssistantsSlide4'
+// import AssistantsSlide5 from './AssistantsSlide5'
 import ToolsSlide2 from './ToolsSlide2'
 import ExperimentsSlide3 from './ExperimentsSlide3'
+import { UserJourney } from './UserJourney'
 
 interface Slide {
   title: string
@@ -104,28 +105,33 @@ const slides: Slide[] = [
   },
   { 
     title: "Tools I use most often", 
-    category: "Functionality",
+    category: "Comfort Zone",
     icon: PencilRulerIcon,
     chart: <ToolsSlide2 />
   },
   { 
     title: "Projects I worked on with Cody",
-    category: "Design",
+    category: "Familiarization",
     chart: <ExperimentsSlide3 />,
     icon: FlaskConical
   },
   { 
-    title: "Customizable", 
-    description: "Easily add your own content and styling.",
-    category: "Flexibility",
-    icon: Palette,
-    img: "/placeholder.svg?height=200&width=400"
+    title: "High level takeaway of Cody", 
+    description: "Highest cognitive load, most adjustment, and largest pay off",
+    category: "Review",
+    icon: Trophy
   },
   {
-    title: "Current Assistants Usage",
-    category: "Analytics",
+    title: "Compared to other AI assistants",
+    category: "Contrasts",
+    description: "Limitations up front, value came with patience",
     icon: BarChart,
-    chart: <AssistantsSlide4 />
+  },
+  {
+    title: "My own user journey",
+    category: "Analytics",
+    icon: Map,
+    chart: <UserJourney />
   },
   {
     title: "Data Visualization",

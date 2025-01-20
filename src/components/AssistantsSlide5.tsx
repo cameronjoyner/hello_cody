@@ -33,7 +33,7 @@ const ConfigurationCard = () => (
   </Card>
 );
 
-const AssistantsSlide4: React.FC = () => {
+const AssistantsSlide5: React.FC = () => {
   return (
     <SlideContainer>
       <AIAssistantCard />
@@ -43,4 +43,4 @@ const AssistantsSlide4: React.FC = () => {
   );
 };
 
-export default AssistantsSlide4;
+export default AssistantsSlide5;
